@@ -2,10 +2,12 @@ require 'sinatra'
 require 'slim'
 require 'json/ext'
 
+require './lib/sinatra/parse_helper.rb'
+
 
 
 get '/okko' do
-  res = { :euro_95 => 28.49, :dp_euro => 27.99}
+  res = get_okko_prices
   
    JSON.dump(res)
 end

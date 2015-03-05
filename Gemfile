@@ -9,6 +9,7 @@ gem 'mongo'
 gem 'bson_ext'
 gem 'rake'
 gem "mini_magick"
+gem 'nokogiri'
 
 group :test do
   gem 'rspec'
